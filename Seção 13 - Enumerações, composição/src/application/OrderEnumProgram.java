@@ -8,7 +8,7 @@ import java.util.Scanner;
 import entities.Order;
 import entities.enums.OrderStatus;
 
-public class OrderProgram {
+public class OrderEnumProgram {
 	
 	public static void main(String[] args) {
 		
