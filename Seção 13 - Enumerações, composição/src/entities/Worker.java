@@ -13,7 +13,7 @@ public class Worker {
 	private double baseSalary;
 	//composição de objetos
 	private Department department;
-	private List<HourContract> contracts = new ArrayList<>(); //composição tem-muitos(lista) - não inclui no construtor
+	private List<HourContract> listContracts = new ArrayList<>(); //composição tem-muitos(lista) - não inclui no construtor
 	
 	//Constructor
 	public Worker() {
@@ -31,16 +31,16 @@ public class Worker {
 	//métodos
 	
 	public void addContract(HourContract contract) {
-		contracts.add(contract);
+		listContracts.add(contract);
 	}
 	public void removeContract(HourContract contract) {
-		contracts.remove(contract);
+		listContracts.remove(contract);
 	}
 	public double income(int year, int month) {
 		double sum = baseSalary;
 		Calendar cal = Calendar.getInstance();
 		
-		for(HourContract c : contracts) {
+		for(HourContract c : listContracts) {
 			cal.setTime(c.getDate());
 			int c_year = cal.get(Calendar.YEAR);
 			int c_month = 1 + cal.get(Calendar.MONTH);
@@ -84,7 +84,7 @@ public class Worker {
 	}
 	//contracts
 	public List<HourContract> getContracts() {
-		return contracts;
+		return listContracts;
 	}
 	
 	

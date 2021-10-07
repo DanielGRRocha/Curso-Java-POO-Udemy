@@ -1,14 +1,12 @@
 package application;
 
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 import java.util.Scanner;
 
 import entities.Order;
 import entities.enums.OrderStatus;
 
-public class OrderEnumProgram {
+public class OrderProgram {
 	
 	public static void main(String[] args) {
 		
