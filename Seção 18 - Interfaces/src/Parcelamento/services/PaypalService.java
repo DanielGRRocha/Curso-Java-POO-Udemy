@@ -1,6 +1,6 @@
 package Parcelamento.services;
 
-public class PaypalService implements PaymentService {
+public class PaypalService implements InterPaymentService {
 	
 	
 	public double parcelaTaxa1(double valorParcela, int mes) {

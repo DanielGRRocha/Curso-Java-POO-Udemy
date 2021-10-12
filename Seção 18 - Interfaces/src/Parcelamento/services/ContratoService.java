@@ -8,10 +8,10 @@ import Parcelamento.entities.Parcelamento;
 
 public class ContratoService {
 	
-	private PaymentService paymentService;
+	private InterPaymentService paymentService;
 	
 	//construtor
-	public ContratoService (PaymentService paymentService) {
+	public ContratoService (InterPaymentService paymentService) {
 		this.paymentService = paymentService;
 	}
 	
